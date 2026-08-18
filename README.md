@@ -1,5 +1,7 @@
 # AI Prompt Engineering Demo — Chat Application
 
+[![CI](https://github.com/code-hy/AI_Prompting/actions/workflows/ci.yml/badge.svg)](https://github.com/code-hy/AI_Prompting/actions/workflows/ci.yml)
+
 A functional demo (chat.z.ai-style UI) that combines a **GitHub-hosted Prompt
 Library** with a pre-loaded **ATO RFQ document (SPC-17765)**. The user selects a
 prompt template; the LLM executes it against the document using a
@@ -92,3 +94,16 @@ parsed for title/description; body passed to the LLM).
   matter (`name`/`description`) for the UI list; only the body reaches the LLM.
 - **Document precedence**: the ATO RFQ is passed as the system-message
   Document Context; a client-supplied `documentContext` overrides it.
+
+## CI
+
+`.github/workflows/ci.yml` runs on every push to `main` and on pull requests:
+
+- **Backend** — installs [uv](https://docs.astral.sh/uv/), runs `uv sync --frozen`
+  against `server/pyproject.toml` + `server/uv.lock`, then a smoke check that
+  imports the FastAPI app and verifies the meta-prompt builder.
+- **Client** — `npm ci` and `next build` (which also runs the TypeScript and
+  lint checks).
+
+The DeepSeek API key is **never** required in CI — the backend test suite and
+smoke checks run in mock mode.
