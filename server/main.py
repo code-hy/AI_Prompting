@@ -95,7 +95,7 @@ def health() -> dict:
 
 @app.get("/api/document")
 def document() -> dict:
-    return {"reference": "SPC-17765", "text": _DOCUMENT_TEXT}
+    return {"reference": "REQ-260818", "text": _DOCUMENT_TEXT}
 
 
 @app.get("/api/prompts")
@@ -123,7 +123,7 @@ async def chat(req: ChatRequest):
             {
                 "promptTemplateName": req.promptTemplateName,
                 "mock": is_mock_mode(),
-                "documentId": "SPC-17765",
+                "documentId": "REQ-260818",
             },
         )
         try:

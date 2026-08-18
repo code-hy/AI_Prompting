@@ -102,8 +102,8 @@ export default function ChatInput() {
         </div>
         <p className="mt-2 text-center text-[11px] text-slate-400">
           {activePrompt
-            ? "The SPC-17765 ATO RFQ is pre-loaded as Document Context."
-            : "Enter Shift+Return for a new line. The SPC-17765 RFQ is pre-loaded in the backend."}
+            ? "The REQ-260818 ATO RFQ is pre-loaded as Document Context."
+            : "Enter Shift+Return for a new line. The REQ-260818 RFQ is pre-loaded in the backend."}
         </p>
       </div>
     </div>

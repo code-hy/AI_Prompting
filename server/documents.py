@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-_DOCUMENT_PATH = Path(__file__).parent / "documents" / "ato_rfq_spc17765.md"
+_DOCUMENT_PATH = Path(__file__).parent / "documents" / "ato_rfq_req260818.md"
 
 
 def load_document() -> str:

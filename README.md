@@ -3,7 +3,7 @@
 [![CI](https://github.com/code-hy/AI_Prompting/actions/workflows/ci.yml/badge.svg)](https://github.com/code-hy/AI_Prompting/actions/workflows/ci.yml)
 
 A functional demo (chat.z.ai-style UI) that combines a **GitHub-hosted Prompt
-Library** with a pre-loaded **ATO RFQ document (SPC-17765)**. The user selects a
+Library** with a pre-loaded **ATO RFQ document (REQ-260818)**. The user selects a
 prompt template; the LLM executes it against the document using a
 **meta-prompt** that validates template requirements against the context and
 refuses to hallucinate missing information.
@@ -16,7 +16,7 @@ server/   Python FastAPI backend
           ├── main.py            /api/prompts, /api/prompts/{id}, /api/document, /api/chat (SSE)
           ├── github_service.py  fetches code-hy/prompt_library prompts (cached)
           ├── llm_service.py     DeepSeek (OpenAI-compatible) + mock fallback
-          ├── documents/         SPC-17765 ATO RFQ (Document Context)
+          ├── documents/         REQ-260818 ATO RFQ (Document Context)
           └── prompts/           bundled demo-scenario templates
 ```
 

@@ -97,7 +97,7 @@ _MOCK_OUTPUTS = [
     (
         "checklist",
         None,
-        "## Bidder Readiness Checklist — SPC-17765\n\n"
+        "## Bidder Readiness Checklist — REQ-260818\n\n"
         "### Mandatory actions\n"
         "- [ ] Quote must be drafted on the **RFQ Form (Attachment B)**.\n"
         "- [ ] Quote must be consistent with the **Deed of Standing Offer for Digital Marketplace "
@@ -127,7 +127,7 @@ _MOCK_OUTPUTS = [
     (
         "evaluation criteria",
         None,
-        "## Compliance & Evaluation Extraction — SPC-17765\n\n"
+        "## Compliance & Evaluation Extraction — REQ-260818\n\n"
         "The RFQ does not publish explicit **weightings** for the evaluation criteria.\n\n"
         "### Goods and/or Services Offered\n"
         "- Quality of the goods and services offered.\n"
@@ -180,7 +180,7 @@ def _mock_stream(messages: list[dict[str, str]]) -> Iterator[str]:
             text = (
                 "Simulated response (mock mode — no DEEPSEEK_API_KEY set). "
                 f"The selected template was: \"{snippet}…\". Add a DeepSeek API "
-                "key to server/.env to execute this template against the SPC-17765 "
+                "key to server/.env to execute this template against the REQ-260818 "
                 "document with the real model."
             )
     yield from _yield_words(text)

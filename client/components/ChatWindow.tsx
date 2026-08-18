@@ -47,7 +47,7 @@ export default function ChatWindow() {
             {activePrompt ? `Active Context: ${activePrompt.name}` : "Standard Chat"}
           </h1>
           <p className="truncate text-[11px] text-slate-400">
-            Document: SPC-17765 · ATO Request for Quote
+            Document: REQ-260818 · ATO Request for Quote
           </p>
         </div>
 

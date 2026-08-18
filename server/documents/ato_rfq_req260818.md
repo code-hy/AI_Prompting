@@ -1,5 +1,5 @@
 Request for Quote
-Our reference: SPC-17765
+Our reference: REQ-260818
 Contact Officer: Yuuichi Yang; Christopher Smith
 Email: Weiwei.yang@ato.gov.au; Christopher.smith2@ato.gov.au
 
@@ -51,7 +51,7 @@ For more information
 If you have any questions, contact Yuuichi Yang and Christopher Smith at Weiwei.yang@ato.gov.au and
 Christopher.smith2@ato.gov.au.
 
-Official — SPC 17765 — External
+Official — REQ-260818 — External
 
 Attachment A: Statement of Requirement
 

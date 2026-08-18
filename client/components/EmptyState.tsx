@@ -43,7 +43,7 @@ export default function EmptyState() {
       </h1>
       <p className="mt-2 max-w-xl text-center text-sm leading-relaxed text-slate-500">
         Execute prompt templates from the GitHub prompt library against the
-        pre-loaded <strong className="text-slate-700">SPC-17765 ATO Request for Quote</strong>.
+        pre-loaded <strong className="text-slate-700">REQ-260818 ATO Request for Quote</strong>.
         The meta-prompt validates template requirements against the document and refuses
         to hallucinate missing information.
       </p>
