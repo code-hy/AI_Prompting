@@ -51,6 +51,13 @@ Copy-Item .env.example .env    # then add DEEPSEEK_API_KEY
 uv run uvicorn main:app --port 8001
 ```
 
+> Run uvicorn **from within `server/`** — the `main` module lives there. To launch
+> from the repo root instead, point uv at the project and add `--app-dir`:
+>
+> ```powershell
+> uv run --project server uvicorn main:app --app-dir server --port 8001
+> ```
+
 Setting `DEEPSEEK_API_KEY` in `server\.env` enables real model calls
 (mock mode is used when it is empty). `DEEPSEEK_BASE_URL` /
 `DEEPSEEK_MODEL` are also configurable. `uv run` loads `server\.env` automatically
